@@ -23,6 +23,8 @@ script:
   - sonar-scanner
 
   - npm test
+  
+  - echo "hello"
 
  
 
