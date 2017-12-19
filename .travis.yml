@@ -1,0 +1,25 @@
+disty: trusty
+sudo: required
+
+language: node_js
+
+node_js:
+  - "stable"
+
+addons:
+  sonarcloud:
+    organization: "ritika86-github"
+    token:
+      secure: "a01bd28ad4d74cf66027d0d58600ee300bd84aa5"
+
+script:
+
+  - sonar-scanner
+
+  - npm test
+  
+  - echo "hello"
+
+ 
+
+ 
