@@ -1,0 +1,14 @@
+doctype
+html
+  head
+    title Edit existing comment
+  body
+    h3 Comment Details
+    form(id='form', method='post', action='/comment/edit/#{comment.id}')
+      label(for='author') Author 
+      input(type='text', id='author', name='author', value='#{comment.author}')
+      <br/><br/>
+      label(for='comment') Comment 
+      input(type='text', id='text', name='text', value='#{comment.text}')
+      <br/><br/>
+      input(type='submit', value='Update Comment')

@@ -1,0 +1,23 @@
+doctype
+html
+  head
+    title=title
+  body
+    h3 Comments
+    table
+      tr
+        th Author
+        th Comment
+        th Edit
+        th Delete
+      each item in comments
+        tr
+          td #{item.author}
+          td #{item.text}
+          td
+            a(href='/comment/edit/#{item.id}') Edit
+          td
+            a(href='/comment/delete/#{item.id}') Delete
+    p
+    #menu
+      a(href='/comment/create') Add new comment

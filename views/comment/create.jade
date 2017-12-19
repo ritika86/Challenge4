@@ -1,0 +1,14 @@
+doctype
+html
+  head
+    title Add new comment
+  body
+    h3 Comment Details
+    form(id='form', method='post', action='/comment/create')
+      label(for='author') Author
+      input(type='text', id='author', name='author')
+      <br/><br/>
+      label(for='text') Comment
+      input(type='text', id='text', name='text')
+      <br/><br/>
+      input(type='submit', value='Add Comment')
